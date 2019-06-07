@@ -140,15 +140,17 @@ public class WallpaperListFragment extends Fragment {
 
     /* For looping unless all files is not added to wallpaperCardList */
     assert file != null;
+    System.out.println("------------ LIST ------------");
     for (int i = 0; i < file.size(); i++) {
 
       /* Allow check files in console for check unloaded images
        * (Maybe you write not correct file or type) */
-      System.out.println(category + " / " + file.get(i));
+      System.out.println("Asset path: " + category + " / " + file.get(i));
 
       /* Adding files to list */
       wallpaperCardList.add(new WallpaperCard(category + "/" + file.get(i)));
     }
+    System.out.println("------------------------------");
 
     /* Update adapter for load RecyclerView */
     adapter.notifyDataSetChanged();

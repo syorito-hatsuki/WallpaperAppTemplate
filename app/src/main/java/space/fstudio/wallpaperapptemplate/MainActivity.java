@@ -11,7 +11,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import space.fstudio.wallpaperapptemplate.Fragments.HomeFragment;
 import space.fstudio.wallpaperapptemplate.Fragments.WallpaperListFragment;
 
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity
   /* File array (To this array registering all files what need to load as wallpaper) */
   ArrayList<String> file = new ArrayList<>();
   Bundle bundle = new Bundle();
+  String[] assetList;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -71,15 +74,16 @@ public class MainActivity extends AppCompatActivity
     /* Category selection switch */
     switch (item.getItemId()) {
       case R.id.nav_category_one:
-        Category1();
+        /* setCategory("Your path in assets") */
+        setCategory("c1");
         fragment.setArguments(bundle);
         break;
       case R.id.nav_category_two:
-        Category2();
+        setCategory("c2");
         fragment.setArguments(bundle);
         break;
       case R.id.nav_category_three:
-        Category3();
+        setCategory("c3");
         fragment.setArguments(bundle);
         break;
     }
@@ -95,30 +99,16 @@ public class MainActivity extends AppCompatActivity
     return true;
   }
 
-  public void Category1() {
+  public void setCategory(String assetsPath) {
     /* category - Is a ID
      * c1 - Is folder name in assets */
-    bundle.putString("category", "c1");
-    file.add("1.jpg");
-    file.add("2.jpg");
-    bundle.putStringArrayList("file", file);
-  }
-
-  public void Category2() {
-    /* category - Is a ID
-     * c2 - Is folder name in assets */
-    bundle.putString("category", "c2");
-    file.add("1.jpeg");
-    file.add("2.jpg");
-    bundle.putStringArrayList("file", file);
-  }
-
-  public void Category3() {
-    /* category - Is a ID
-     * c3 - Is folder name in assets */
-    bundle.putString("category", "c3");
-    file.add("1.jpg");
-    file.add("2.jpg");
+    bundle.putString("category", assetsPath);
+    try {
+      assetList = getAssets().list(assetsPath);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    file.addAll(Arrays.asList(assetList));
     bundle.putStringArrayList("file", file);
   }
 }
