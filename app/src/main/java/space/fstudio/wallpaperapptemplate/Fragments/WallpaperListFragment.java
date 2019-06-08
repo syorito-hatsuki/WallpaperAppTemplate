@@ -87,7 +87,7 @@ public class WallpaperListFragment extends Fragment {
             try {
               /* Set wallpaper */
               wm.setStream(
-                  Objects.requireNonNull(getActivity()).getAssets().open(wallpaperCard.getImg()));
+                  Objects.requireNonNull(getActivity()).getAssets().open(wallpaperCard.getCategory()));
             } catch (IOException e) {
               e.printStackTrace();
             }
@@ -108,7 +108,7 @@ public class WallpaperListFragment extends Fragment {
             try {
               /* Open image from position in dialog */
               imageView.setImageBitmap(BitmapFactory
-                  .decodeStream((getActivity().getAssets().open(wallpaperCard.getImg()))));
+                  .decodeStream((getActivity().getAssets().open(wallpaperCard.getCategory()))));
             } catch (IOException ignored) {
             }
 
@@ -148,7 +148,7 @@ public class WallpaperListFragment extends Fragment {
       System.out.println("Asset path: " + category + " / " + file.get(i));
 
       /* Adding files to list */
-      wallpaperCardList.add(new WallpaperCard(category + "/" + file.get(i)));
+      wallpaperCardList.add(new WallpaperCard(getActivity(), category + "/" + file.get(i)));
     }
     System.out.println("------------------------------");
 

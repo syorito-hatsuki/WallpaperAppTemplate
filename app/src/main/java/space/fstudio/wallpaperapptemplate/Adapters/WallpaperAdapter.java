@@ -43,7 +43,7 @@ public class WallpaperAdapter extends RecyclerView.Adapter<WallpaperAdapter.View
   public void onBindViewHolder(@NonNull WallpaperAdapter.ViewHolder viewHolder, int i) {
     WallpaperCard wallpaperCard = wallpaperCardList.get(i);
     /* Loading image to ImageView using Picasso for remove lags */
-    Picasso.get().load("file:///android_asset/" + wallpaperCard.getImg()).fit()
+    Picasso.get().load("file:///android_asset/" + wallpaperCard.getCategory()).fit()
         .into(viewHolder.img);
   }
 

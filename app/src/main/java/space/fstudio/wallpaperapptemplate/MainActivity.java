@@ -1,5 +1,8 @@
 package space.fstudio.wallpaperapptemplate;
 
+import static space.fstudio.wallpaperapptemplate.Cards.WallpaperCard.bundle;
+import static space.fstudio.wallpaperapptemplate.Cards.WallpaperCard.file;
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -11,9 +14,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
+import space.fstudio.wallpaperapptemplate.Cards.WallpaperCard;
 import space.fstudio.wallpaperapptemplate.Fragments.HomeFragment;
 import space.fstudio.wallpaperapptemplate.Fragments.WallpaperListFragment;
 
@@ -22,9 +23,6 @@ public class MainActivity extends AppCompatActivity
 
   DrawerLayout drawer;
   /* File array (To this array registering all files what need to load as wallpaper) */
-  ArrayList<String> file = new ArrayList<>();
-  Bundle bundle = new Bundle();
-  String[] assetList;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -67,26 +65,29 @@ public class MainActivity extends AppCompatActivity
   public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
     Fragment fragment = new WallpaperListFragment();
+    WallpaperCard wallpaperCard = new WallpaperCard(MainActivity.this, null);
 
     /* Clear list if is not empty (For fix duplication bug) */
     if (!file.isEmpty()){file.clear();}
 
     /* Category selection switch */
-    switch (item.getItemId()) {
-      case R.id.nav_category_one:
-        /* setCategory("Your path in assets") */
-        setCategory("c1");
-        fragment.setArguments(bundle);
-        break;
-      case R.id.nav_category_two:
-        setCategory("c2");
-        fragment.setArguments(bundle);
-        break;
-      case R.id.nav_category_three:
-        setCategory("c3");
-        fragment.setArguments(bundle);
-        break;
-    }
+    try {
+      switch (item.getItemId()) {
+        case R.id.nav_category_one:
+          /* setCategory("Your path in assets") */
+          wallpaperCard.setCategory("c1");
+          fragment.setArguments(bundle);
+          break;
+        case R.id.nav_category_two:
+          wallpaperCard.setCategory("c2");
+          fragment.setArguments(bundle);
+          break;
+        case R.id.nav_category_three:
+          wallpaperCard.setCategory("c3");
+          fragment.setArguments(bundle);
+          break;
+      }
+    }catch (Exception ignored){}
 
     /* Change fragment when it selected */
     FragmentTransaction fragmentManager = getSupportFragmentManager().beginTransaction();
@@ -99,16 +100,4 @@ public class MainActivity extends AppCompatActivity
     return true;
   }
 
-  public void setCategory(String assetsPath) {
-    /* category - Is a ID
-     * c1 - Is folder name in assets */
-    bundle.putString("category", assetsPath);
-    try {
-      assetList = getAssets().list(assetsPath);
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-    file.addAll(Arrays.asList(assetList));
-    bundle.putStringArrayList("file", file);
-  }
 }
