@@ -7,6 +7,8 @@ Minimal android version 4.4
 
 ## Badges
 ![GitHub](https://img.shields.io/github/license/syorito-hatsuki/WallpaperAppTemplate.svg?label=Wallpaper%20App%20Template)
+![GitHub last commit](https://img.shields.io/github/last-commit/syorito-hatsuki/WallpaperAppTemplate.svg)
+
 
 ## Test APK
 Here link for download APK for testing
