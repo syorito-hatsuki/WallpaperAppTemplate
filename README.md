@@ -1,3 +1,5 @@
+![GitHub](https://img.shields.io/github/license/syorito-hatsuki/WallpaperAppTemplate.svg?label=Wallpaper%20App%20Template)
+![GitHub last commit](https://img.shields.io/github/last-commit/syorito-hatsuki/WallpaperAppTemplate.svg)
 <img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/banner.jpg?raw=true"/>
 
 ## Description
@@ -5,18 +7,8 @@ Simple but responsive wallpaper collection template.
 
 Minimal android version 4.4
 
-## Badges
-![GitHub](https://img.shields.io/github/license/syorito-hatsuki/WallpaperAppTemplate.svg?label=Wallpaper%20App%20Template)
-![GitHub last commit](https://img.shields.io/github/last-commit/syorito-hatsuki/WallpaperAppTemplate.svg)
+[APK for testing](https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/app-debug.apk?raw=true)
 
-
-## Test APK
-Here link for download APK for testing
-
-[Direct Link](https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/app-debug.apk?raw=true)
-
-## Screenshots
-<img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/Preview.png?raw=true"/>
 
 ## Whats new in 1.1
 - Updated file register system. Now you didn\`t need to add all image files to array yourself
@@ -24,6 +16,9 @@ Here link for download APK for testing
 ```java
 setCategory("Your asset folder path for current category");
 ```
+
+## Screenshots
+<img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/Preview.png?raw=true"/>
 
 ## Used outside libraries
 
