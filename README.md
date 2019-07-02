@@ -1,4 +1,4 @@
-<p align="right" href="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/README-RU.md">Русский язык</p>
+<a href="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/README-RU.md"><p align="right">Русский язык</p></a>
 
 ![GitHub](https://img.shields.io/github/license/syorito-hatsuki/WallpaperAppTemplate.svg?label=Wallpaper%20App%20Template)![GitHub last commit](https://img.shields.io/github/last-commit/syorito-hatsuki/WallpaperAppTemplate.svg)
 <img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/banner.jpg?raw=true"/>
