@@ -20,7 +20,7 @@ setCategory("Your asset folder path for current category");
 ## Screenshots
 <img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/Preview.png?raw=true"/>
 
-## Used outside libraries
+## External libraries that were used
 
 For create image finger zoom in dialog I use [Zoomage](http://jsibbold.github.io/zoomage/)
 
