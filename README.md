@@ -1,4 +1,7 @@
 # Wallpaper Pack Application Template V1.1
+
+<img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/banner.png?raw=true"/>
+
 ## Description
 Simple but responsive wallpaper collection template.
 
