@@ -27,4 +27,4 @@ For create image finger zoom in dialog I use [Zoomage](http://jsibbold.github.io
 For load images with out lags I use [Picasso](http://square.github.io/picasso/)
 
 ## License
-MIT | [Copyright (c) 2019 Syorito Hatsuki](https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/LICENSE)
+[MIT | Copyright (c) 2019 Syorito Hatsuki](https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/LICENSE)
