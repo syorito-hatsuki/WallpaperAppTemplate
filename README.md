@@ -11,7 +11,7 @@ Here link for download APK for testing
 [Direct Link](https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/app-debug.apk?raw=true)
 
 ## Screenshots
-<img src="https://psv4.userapi.com/c848028/u50976151/docs/d13/e18758d754b7/Screenshot_20190607-01rap633_Wallpaper_App_Template.png?extra=EzELk1aN7S2BpxUrgZLN2_8w7vLaQ0AXLO88tULFaJin6eBKqwx-vsFZWsvrPdQEiHBY2ysJAXM5eLSm2ZF-ukICrmj3n7kP7felZ27T5McwBonU6sCQbfvrj3y6bySrkH7weSXf3y7zKygnUrXWCoag"/>
+<img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/Preview.png?raw=true"/>
 
 ## Whats new in 1.1
 - Updated file register system. Now you didn\`t need to add all image files to array yourself
