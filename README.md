@@ -1,7 +1,7 @@
-<a href="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/README-RU.md"><p align="right">Русский язык</p></a>
-![GitHub](https://img.shields.io/github/license/syorito-hatsuki/WallpaperAppTemplate.svg?label=Wallpaper%20App%20Template)![GitHub last commit](https://img.shields.io/github/last-commit/syorito-hatsuki/WallpaperAppTemplate.svg)
+![GitHub](https://img.shields.io/github/license/syorito-hatsuki/WallpaperAppTemplate.svg?label=Wallpaper%20App%20Template)
+![GitHub last commit](https://img.shields.io/github/last-commit/syorito-hatsuki/WallpaperAppTemplate.svg)
 <img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/banner.jpg?raw=true"/>
-
+<a href="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/README-RU.md"><p align="right">Русский язык</p></a>
 ## Description
 Simple but responsive wallpaper collection template.
 
@@ -28,3 +28,4 @@ For load images with out lags I use [Picasso](http://square.github.io/picasso/)
 
 ## License
 [MIT | Copyright (c) 2019 Syorito Hatsuki](https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/LICENSE)
+
