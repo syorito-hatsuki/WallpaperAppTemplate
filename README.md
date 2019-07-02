@@ -1,5 +1,3 @@
-# Wallpaper Pack Application Template V1.1
-
 <img src="https://github.com/syorito-hatsuki/WallpaperAppTemplate/blob/master/banner.jpg?raw=true"/>
 
 ## Description
